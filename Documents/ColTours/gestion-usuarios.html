@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ColTours</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <img class="logo" src="/img/logo-C.png" alt="">
+                    <a class="navbar-brand" href="index.html">ColTours</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="gestion-usuarios.html">Gestión de usuarios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gestion-servicios.html">Gestión de servicios</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </main>
+            <div class="container px-5 my-5">
+
+                <div class="d-flex align-items-start justify-content-start">
+                    <h4>Gestión de usuarios</h4>
+                </div>
+                <div>
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="usuario">Nombre de usuario</label>
+                                <input type="text" id="usuario" class="form-control" placeholder="Pablo Perez"/>
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="correo">Correo</label>
+                                <input type="email" id="correo" class="form-control" placeholder="pablo@gmail.com"/>
+                            </div>
+
+                            <div class="col">
+                                <label class="form-label" for="contra">Contraseña</label>
+                                <input type="password" id="contra" class="form-control mb-2" placeholder="*******"/>
+                            </div>
+                            <div class="col">
+                                <label class="form-label" for="contra_repetir">Repetir Contraseña</label>
+                                <input type="password" id="contra_repetir" class="form-control mb-2" placeholder="*******"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <label class="form-label" for="rol">Rol</label>
+                                <select class="form-select" id="rol" aria-label="select">
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Visualizador</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+                                    Registrar Usuario
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr class="table-primary">
+                                <th scope="col">Nombre de usuario</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Raul Ayala</td>
+                                <td>raul10@hotmail.com</td>
+                                <td><u>Editar - Eliminar</u></td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>Ricardo Martinez</td>
+                                <td>richimartinez@gmail.com</td>
+                                <td><u>Editar - Eliminar</u></td>
+                            </tr>
+                            <tr>
+                                <td>Lorena Gomez</td>
+                                <td>lgomez@hotmail.com</td>
+                                <td><u>Editar - Eliminar</u></td>
+                            </tr>
+                            <tr class="table-info">
+                                <td>Juan Benitez</td>
+                                <td>benitezjuan@gmail.com</td>
+                                <td><u>Editar - Eliminar</u></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    
+    </body>
+</html>
