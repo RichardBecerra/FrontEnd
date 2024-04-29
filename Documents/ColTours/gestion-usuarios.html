@@ -37,8 +37,9 @@
                     <h4>Gestión de usuarios</h4>
                 </div>
                 <div>
-                    <form>
+                    <form id="form">
                         <div class="row">
+                            <input type="hidden" id="id"/>
                             <div class="col">
                                 <label class="form-label" for="usuario">Nombre de usuario</label>
                                 <input type="text" id="usuario" class="form-control" placeholder="Pablo Perez"/>
@@ -66,7 +67,7 @@
                                 </select>
                             </div>
                             <div class="d-flex align-items-center justify-content-center">
-                                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+                                <button type="submit" onclick="save(event)" id="register-user" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
                                     Registrar Usuario
                                 </button>
                             </div>
@@ -75,7 +76,7 @@
                     </form>
                 </div>
                 <div>
-                    <table class="table">
+                    <table class="table" id="table">
                         <thead>
                             <tr class="table-primary">
                                 <th scope="col">Nombre de usuario</th>
@@ -83,27 +84,8 @@
                                 <th scope="col">Acción</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Raul Ayala</td>
-                                <td>raul10@hotmail.com</td>
-                                <td><u>Editar - Eliminar</u></td>
-                            </tr>
-                            <tr class="table-info">
-                                <td>Ricardo Martinez</td>
-                                <td>richimartinez@gmail.com</td>
-                                <td><u>Editar - Eliminar</u></td>
-                            </tr>
-                            <tr>
-                                <td>Lorena Gomez</td>
-                                <td>lgomez@hotmail.com</td>
-                                <td><u>Editar - Eliminar</u></td>
-                            </tr>
-                            <tr class="table-info">
-                                <td>Juan Benitez</td>
-                                <td>benitezjuan@gmail.com</td>
-                                <td><u>Editar - Eliminar</u></td>
-                            </tr>
+                        <tbody id="tableBody">
+
                         </tbody>
                     </table>
                 </div>
@@ -115,6 +97,7 @@
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-    
+        <script src="js/users.js"></script>
+
     </body>
 </html>
