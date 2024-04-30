@@ -2,8 +2,9 @@
 window.addEventListener("load", (event) => {
     allData();
 });
-function save(e){
-    e.preventDefault();
+
+document.getElementById("form").addEventListener('submit', (event) => {
+    event.preventDefault();
     var contra = document.getElementById('contra').value;
     var repetirContra = document.getElementById('contra_repetir').value;
 
@@ -41,7 +42,7 @@ function save(e){
 
     document.getElementById('form').reset()
     allData();
-}
+});
 
 function allData(){
 

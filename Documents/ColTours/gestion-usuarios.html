@@ -42,32 +42,32 @@
                             <input type="hidden" id="id"/>
                             <div class="col">
                                 <label class="form-label" for="usuario">Nombre de usuario</label>
-                                <input type="text" id="usuario" class="form-control" placeholder="Pablo Perez"/>
+                                <input type="text" id="usuario" required class="form-control" placeholder="Pablo Perez"/>
                             </div>
                             <div class="col">
                                 <label class="form-label" for="correo">Correo</label>
-                                <input type="email" id="correo" class="form-control" placeholder="pablo@gmail.com"/>
+                                <input type="email" id="correo" required class="form-control" placeholder="pablo@gmail.com"/>
                             </div>
 
                             <div class="col">
                                 <label class="form-label" for="contra">Contraseña</label>
-                                <input type="password" id="contra" class="form-control mb-2" placeholder="*******"/>
+                                <input type="password" id="contra" required class="form-control mb-2" placeholder="*******"/>
                             </div>
                             <div class="col">
                                 <label class="form-label" for="contra_repetir">Repetir Contraseña</label>
-                                <input type="password" id="contra_repetir" class="form-control mb-2" placeholder="*******"/>
+                                <input type="password" id="contra_repetir" required class="form-control mb-2" placeholder="*******"/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-3">
                                 <label class="form-label" for="rol">Rol</label>
-                                <select class="form-select" id="rol" aria-label="select">
+                                <select class="form-select" id="rol" required aria-label="select">
                                     <option value="1">Administrador</option>
                                     <option value="2">Visualizador</option>
                                 </select>
                             </div>
                             <div class="d-flex align-items-center justify-content-center">
-                                <button type="submit" onclick="save(event)" id="register-user" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+                                <button type="submit" id="register-user" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
                                     Registrar Usuario
                                 </button>
                             </div>
